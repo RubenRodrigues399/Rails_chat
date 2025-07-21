@@ -6,3 +6,6 @@ import { application } from "./application"
 
 import ChatController from "./chat_controller"
 application.register("chat", ChatController)
+
+import ResetFormController from "./reset_form_controller"
+application.register("reset-form", ResetFormController)
