@@ -1,0 +1,19 @@
+/* ================================
+   Caixa com as mensagens (scroll)
+   ================================ */
+
+.chat-box {
+  flex: 1;
+  overflow-y: auto;
+  padding: 15px;
+}
+
+.messages-box {
+  height: 100%;
+}
+
+.messages-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
