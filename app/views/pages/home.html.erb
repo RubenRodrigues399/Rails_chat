@@ -1,2 +1,17 @@
-<h1>Chat on Rails</h1>
-<p>Bem-Vindo ao chat, <%current_user.username%>!</p>
+<%= turbo_stream_from dom_id(current_user) %>
+
+<div class="chat-container">
+  <div class="chat-header">
+    <h1>Bem-vindo ao chat on Rails, <%= current_user.username %>!</h1>
+
+    <div class="logout-wrapper">
+      <%= link_to "Sair", destroy_user_session_path, method: :delete, class: "logout-button" %>
+  </div>
+  </div>
+
+  <div id="chatbox" class="chat-box">
+    <%= render partial: "messages/chatbox", locals: { messages: @messages } %>
+  </div>
+
+  <%= render partial: "messages/form", locals: { message: @message } %>
+</div>
