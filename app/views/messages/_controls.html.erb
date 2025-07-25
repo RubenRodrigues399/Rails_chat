@@ -1,0 +1,4 @@
+<%= link_to 'Apagar', message_path(message),
+            method: :delete,
+            data: { confirm: 'Tem certeza?', turbo_method: :delete },
+            class: 'delete-button' %>
