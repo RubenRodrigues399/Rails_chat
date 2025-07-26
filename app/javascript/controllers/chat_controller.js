@@ -85,15 +85,15 @@ export default class extends Controller {
   }
 
   // Apply style to a message body
-  applyStyle(userId, messageBody) {
-    if (userId === this.currentUserIdValue) {
-      messageBody.classList.add("bg-themeColorMain", "text-textColorSecondary");
-    } else {
-      messageBody.classList.add(
-        "border",
-        "border-themeColorMain",
-        "text-textColorMain"
-      );
-    }
-  }
+  // applyStyle(userId, messageBody) {
+  //   if (userId === this.currentUserIdValue) {
+  //     messageBody.classList.add("bg-themeColorMain", "text-textColorSecondary");
+  //   } else {
+  //     messageBody.classList.add(
+  //       "border",
+  //       "border-themeColorMain",
+  //       "text-textColorMain"
+  //     );
+  //   }
+  // }
 }
