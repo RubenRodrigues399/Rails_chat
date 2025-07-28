@@ -1,4 +1,3 @@
-<%= link_to 'Apagar', message_path(message),
-            method: :delete,
-            data: { confirm: 'Tem certeza?', turbo_method: :delete },
-            class: 'delete-button' %>
+<%= form_with url: message_path(message), method: :delete, data: { turbo_confirm: "Tens a certeza?" }, class: "inline-form" do %>
+  <%= button_tag "Apagar", class: "delete-button" %>
+<% end %>
