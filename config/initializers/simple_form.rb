@@ -62,6 +62,12 @@ SimpleForm.setup do |config|
     # use the component :full_error, like:
     #
     # b.use :full_error, wrap_with: { tag: :span, class: :error }
+    # 
+    
+    # PARA REMOVER OS ASTERISCOS DOS LABELS DOS CAMPOS OBRIGATÓRIOS
+    #config.required_mark = ''
+
+    config.label_text = ->(label, required, explicit_label) { label.to_s }
   end
 
   # The default wrapper to be used by the FormBuilder.
