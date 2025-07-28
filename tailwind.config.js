@@ -6,8 +6,14 @@ module.exports = {
     "./app/assets/stylesheets/**/*.css",
     "./app/javascript/**/*.js"
   ],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
+    theme: {
+      extend: {
+        colors: {
+          themeColorMain: "#1aa8db",
+          themeColorSecondary: "#d23838"
+        }
+      },
+    },
+    variants: {},
+    plugins: [],
+  }
