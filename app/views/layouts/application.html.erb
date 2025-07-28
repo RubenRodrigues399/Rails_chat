@@ -23,8 +23,14 @@
 
   <body>
     <!-- Flag messages -->
-     <p class="notice"><%= notice %></p>
-     <p class="alert"><%= alert %></p>
+     <div class="main-container">
+    <% if notice.present? %>
+      <div class="flash_notice"><%= notice %></div>
+    <% end %>
+
+    <% if alert.present? %>
+      <div class="flash_alert"><%= alert %></div>
+    <% end %>
 
     <%= yield %>
   </body>
