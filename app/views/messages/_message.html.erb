@@ -1,4 +1,4 @@
-<%= turbo_frame_tag dom_id(message) do %>
+<%= tag.div id: dom_id(message), class: "message-wrapper" do %>
   <div class="message" data-user-id="<%= message.user.id %>">
     <div class="message-header">
       <div class="message-author-info">
