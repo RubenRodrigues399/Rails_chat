@@ -1,4 +1,5 @@
 class Message < ApplicationRecord
+  include ActionView::RecordIdentifier
   belongs_to :user
   validates :body, presence: true, length: {maximum: 1000}
 
@@ -8,8 +9,10 @@ class Message < ApplicationRecord
   def broadcast_create
     # Broadcast to all users the message partial
     broadcast_append_to "messages",
-      partial: "messages/message",
-      locals: { message: self, display_controls: false }
+  target: "messages", # <- ESSENCIAL para funcionar
+  partial: "messages/message",
+  locals: { message: self, display_controls: false }
+
 
     # Broadcast the user controls to: message_id_user_id_controls
     broadcast_replace_to "user_#{self.user.id}",
@@ -20,6 +23,6 @@ class Message < ApplicationRecord
 
   def broadcast_destroy
     # Broadcast to all users the message partial
-    broadcast_remove_to "messages"
+    broadcast_remove_to "messages", target: dom_id(self)
   end
 end
