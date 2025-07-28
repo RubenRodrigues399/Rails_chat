@@ -5,13 +5,10 @@
     <h1>Bem-vindo ao chat on Rails, <%= current_user.username %>!</h1>
 
     <div class="logout-wrapper">
-    <% if user_signed_in? %>
 <%= button_to "Sair", destroy_user_session_path,
               method: :delete,
               data: { confirm: "Tens a certeza que queres sair?" },
               class: "logout-button" %>
-<% end %>
-
   </div>
   </div>
 
