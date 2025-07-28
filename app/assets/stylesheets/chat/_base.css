@@ -22,13 +22,15 @@
 
 .flash {
   padding: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   border-radius: 5px;
   color: white;
 }
 
 .notice {
   background-color: #38a169; /* verde */
+  margin-top: 50px;
+  
 }
 
 .alert {

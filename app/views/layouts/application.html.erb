@@ -18,18 +18,18 @@
     <link rel="apple-touch-icon" href="/icon.png">
 
     <%# Includes all stylesheet files in app/assets/stylesheets %>
-    <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag :app, "data-turbo-track": "reload", defer: true %>
   </head>
 
   <body>
     <!-- Flag messages -->
      <div class="main-container">
     <% if notice.present? %>
-      <div class="flash_notice"><%= notice %></div>
+      <div class="flash notice"><%= notice %></div>
     <% end %>
 
     <% if alert.present? %>
-      <div class="flash_alert"><%= alert %></div>
+      <div class="flash alert"><%= alert %></div>
     <% end %>
 
     <%= yield %>
