@@ -4,10 +4,10 @@
   align-items: center;
   justify-content: center;
   height: 80vh;
-  background-color: white; /* <- Adiciona isto */
+  background-color: white;
   padding: 2rem;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* opcional para destaque */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .h2 {
@@ -45,19 +45,16 @@ input[type="submit"],
   background-color: #004d99;
 }
 
-/* Estilo das labels */
 label {
   display: block;
   margin-bottom: 6px;
   font-weight: bold;
 }
 
-/* Margem inferior nos campos */
 .mb-4 {
   margin-bottom: 1rem;
 }
 
-/* Container de autenticação centralizado */
 .auth-container {
   display: flex;
   flex-direction: column;

@@ -1,7 +1,3 @@
-/* =======================
-   Estrutura geral do chat
-   ======================= */
-
 .chat-container {
   display: flex;
   flex-direction: column;

@@ -2,7 +2,6 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-/* Imports customizados do chat */
 @import "chat/base";
 @import "chat/layout";
 @import "chat/chat_header";
