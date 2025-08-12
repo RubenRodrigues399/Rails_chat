@@ -67,4 +67,4 @@ gem "simple_form"
 gem "tailwindcss-rails"
 gem "rubocop", "~> 1.78", group: :development
 
-gem "rubocop-rails", "~> 2.32", group: :development
+gem "rubocop-rails", "~> 2.33", group: :development
